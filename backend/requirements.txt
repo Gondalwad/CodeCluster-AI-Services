@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+# Computer Vision & ML
+ultralytics==8.3.221
+mediapipe==0.10.21
+opencv-python-headless==4.11.0.86
+
+# Face Recognition
+insightface==0.7.3
+onnxruntime==1.22.1
+
+# Speech Detection
+torch==2.2.2
+torchaudio==2.5.1
+
+# gRPC
+grpcio==1.74.0
+grpcio-tools==1.71.2
+protobuf==4.25.9
+
+# Utilities
+numpy==1.26.4
+Pillow==10.2.0
+python-dotenv==1.2.1
+=======
+fastapi==0.115.12
+uvicorn[standard]==0.34.3
+websockets==15.0.1
+pydantic==2.11.4
+pydantic-settings==2.9.1
+python-dotenv==1.1.0
+opencv-python==4.11.0.86
+numpy==1.26.4
+grpcio==1.74.0
+grpcio-tools==1.71.2
+protobuf==4.25.9
+>>>>>>> a24275a (ml backend)

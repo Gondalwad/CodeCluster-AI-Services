@@ -1,0 +1,104 @@
+# ── Virtual Environment ───────────────────────────────────────────
+venv/
+.venv/
+env/
+
+<<<<<<< HEAD
+# ── Model Weights (large binary files) ───────────────────────────
+weights/
+*.pt
+*.pth
+*.onnx
+*.bin
+*.pkl
+*.h5
+
+=======
+>>>>>>> a24275a (ml backend)
+# ── Python Cache ──────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Environment & Secrets ─────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+*.key
+
+<<<<<<< HEAD
+# ── InsightFace / Torch downloaded models ─────────────────────────
+# These auto-download at runtime — no need to commit
+.insightface/
+*.cache/
+~/.insightface/
+
+# ── Candidate registration images (PII) ───────────────────────────
+*.jpg
+*.jpeg
+*.png
+
+=======
+>>>>>>> a24275a (ml backend)
+# ── IDE & Editor ──────────────────────────────────────────────────
+.idea/
+.vscode/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ── OS Junk ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs & Temp ───────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+logs/
+
+# ── Build & Distribution ──────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ── Test & Coverage Artifacts ─────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+<<<<<<< HEAD
+# ── Jupyter Notebooks ─────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+
+# ── Docs scratch files ────────────────────────────────────────────
+# Docs/memory.txt
+# Docs/memory1.txt
+# Docs/improved_arch_text.txt
+# Docs/*
+Docs/
+=======
+# ── gRPC Generated Stubs (regenerated from .proto at build time) ──
+protos/*_pb2.py
+protos/*_pb2_grpc.py
+
+# ── Registration image (contains candidate PII) ───────────────────
+registration.jpg
+*.jpg
+*.jpeg
+*.png
+
+# ── Uploaded / temp media ─────────────────────────────────────────
+uploads/
+media/
+>>>>>>> a24275a (ml backend)

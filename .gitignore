@@ -1,0 +1,83 @@
+# ── Virtual Environments ──────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Python Cache ──────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Environment & Secrets ─────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+*.key
+
+# ── Node / Frontend ───────────────────────────────────────────────
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+*.local
+
+# ── Model Weights (large binary files) ───────────────────────────
+*.pt
+*.pth
+*.onnx
+*.bin
+*.pkl
+*.h5
+weights/
+
+# ── Candidate Images (PII) ────────────────────────────────────────
+registration.jpg
+*.jpg
+*.jpeg
+*.png
+
+# ── InsightFace / runtime-downloaded models ───────────────────────
+.insightface/
+*.cache/
+
+
+# ── IDE & Editor ──────────────────────────────────────────────────
+.idea/
+.vscode/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ── OS Junk ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs & Temp ───────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+logs/
+logs.txt
+
+# ── Test & Coverage Artifacts ─────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ── Build & Distribution ──────────────────────────────────────────
+*.egg-info/
+*.egg
+
+# ── Misc project files not needed in repo ─────────────────────────
+Proctoring_Development_Status_Report.txt
+
+# ── Frontend (managed separately) ────────────────────────────────
+CodeCluster/

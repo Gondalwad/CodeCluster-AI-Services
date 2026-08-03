@@ -1,0 +1,107 @@
+version: "3.9"
+
+services:
+
+  ml-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    image: codecluster/ml-worker:latest
+    container_name: codecluster-ml-worker
+    restart: unless-stopped
+    environment:
+      GRPC_PORT: 50051
+    env_file:
+      - .env
+    expose:
+      - "50051"
+    volumes:
+      - ml_weights:/app/weights
+    networks:
+      - codecluster
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import grpc; ch=grpc.insecure_channel('localhost:50051'); grpc.channel_ready_future(ch).result(timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: "2.0"
+
+  # java-backend is owned by the Java team.
+  # Uncomment once their image is published and update the image name.
+  #
+  # java-backend:
+  #   image: codecluster/java-backend:latest
+  #   container_name: codecluster-java-backend
+  #   restart: unless-stopped
+  #   ports:
+  #     - "8080:8080"
+  #   environment:
+  #     ML_WORKER_HOST: ml-worker
+  #     ML_WORKER_PORT: 50051
+  #     SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/codecluster
+  #     SPRING_DATASOURCE_USERNAME: codecluster
+  #     SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+  #     SPRING_REDIS_HOST: redis
+  #     SPRING_REDIS_PORT: 6379
+  #   depends_on:
+  #     ml-worker:
+  #       condition: service_healthy
+  #     postgres:
+  #       condition: service_healthy
+  #     redis:
+  #       condition: service_healthy
+  #   networks:
+  #     - codecluster
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: codecluster-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: codecluster
+      POSTGRES_USER: codecluster
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+    networks:
+      - codecluster
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U codecluster"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: codecluster-redis
+    restart: unless-stopped
+    command: redis-server --save 60 1 --loglevel warning
+    volumes:
+      - redis_data:/data
+    expose:
+      - "6379"
+    networks:
+      - codecluster
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  codecluster:
+    driver: bridge
+
+volumes:
+  ml_weights:
+  postgres_data:
+  redis_data:

@@ -1,0 +1,47 @@
+# ── Virtual environment ───────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Python cache ──────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Tests ─────────────────────────────────────────────────────────
+tests/
+
+# ── Docs & notes ──────────────────────────────────────────────────
+Docs/
+*.md
+*.txt
+*.docx
+
+# ── IDE & OS ──────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ── Git ───────────────────────────────────────────────────────────
+.git/
+.gitignore
+.gitattributes
+
+# ── Secrets (injected via env at runtime) ─────────────────────────
+.env
+.env.*
+
+# ── Downloaded model caches (baked in via multi-stage build) ──────
+.insightface/
+.cache/
+
+# ── gRPC stubs (compiled at build time in Dockerfile) ─────────────
+grpc_service/*_pb2.py
+grpc_service/*_pb2_grpc.py
+
+# ── Logs & temp ───────────────────────────────────────────────────
+*.log
+*.tmp
+logs/
