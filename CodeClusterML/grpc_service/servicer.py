@@ -32,8 +32,6 @@ def _jpeg_to_frame(jpeg_bytes: bytes) -> np.ndarray:
         return None
 
     if len(payload) < 8:
-        logger.warning(
-            "Rejecting JPEG payload: too short (%d bytes)", len(payload))
         return None
 
     arr = np.frombuffer(payload, dtype=np.uint8)
@@ -56,48 +54,48 @@ def _jpeg_to_frame(jpeg_bytes: bytes) -> np.ndarray:
 
 
 def _build_frame_response(result: dict) -> proctor_pb2.FrameResponse:
-    va = result["visionAnalysis"]
-    aa = result["audioAnalysis"]
+    va = result.get("visionAnalysis", {})
+    aa = result.get("audioAnalysis", {})
 
     detected_objects = [
         proctor_pb2.DetectedObject(
-            label=obj["label"],
-            confidence=float(obj["confidence"]),
-            bbox=[int(x) for x in obj["bbox"]],
+            label=obj.get("label", ""),
+            confidence=float(obj.get("confidence", 0.0)),
+            bbox=[int(x) for x in obj.get("bbox", [])],
         )
-        for obj in va["detectedObjects"]
+        for obj in va.get("detectedObjects", [])
     ]
 
     vision = proctor_pb2.VisionAnalysis(
-        gaze_direction=va["gazeDirection"],
-        is_head_turned=bool(va["isHeadTurned"]),
-        yaw_angle=float(va["yawAngle"] or 0.0),
-        pitch_angle=float(va["pitchAngle"] or 0.0),
-        face_count=int(va["faceCount"]),
-        face_status=va["faceStatus"],
-        face_matched=bool(va["faceMatched"]),
-        similarity_score=float(va["similarityScore"] or 0.0),
-        eyes_closed=bool(va["eyesClosed"]),
-        blink_count=int(va["blinkCount"]),
-        specs_detected=bool(va["specsDetected"]),
-        specs_confidence=float(va["specsConfidence"] or 0.0),
+        gaze_direction=va.get("gazeDirection", "CENTER"),
+        is_head_turned=bool(va.get("isHeadTurned", False)),
+        yaw_angle=float(va.get("yawAngle") or 0.0),
+        pitch_angle=float(va.get("pitchAngle") or 0.0),
+        face_count=int(va.get("faceCount", 1)),
+        face_status=va.get("faceStatus", "OK"),
+        face_matched=bool(va.get("faceMatched", True)),
+        similarity_score=float(va.get("similarityScore") or 0.0),
+        eyes_closed=bool(va.get("eyesClosed", False)),
+        blink_count=int(va.get("blinkCount", 0)),
+        specs_detected=bool(va.get("specsDetected", False)),
+        specs_confidence=float(va.get("specsConfidence") or 0.0),
         detected_objects=detected_objects,
     )
 
     audio = proctor_pb2.AudioAnalysis(
-        is_human_speech=bool(aa["isHumanSpeech"]),
-        speech_probability=float(aa["speechProbability"]),
+        is_human_speech=bool(aa.get("isHumanSpeech", False)),
+        speech_probability=float(aa.get("speechProbability", 0.0)),
     )
 
     return proctor_pb2.FrameResponse(
-        timestamp=result["timestamp"],
-        candidate_id=result["candidateId"],
+        timestamp=result.get("timestamp", 0),
+        candidate_id=result.get("candidateId", ""),
         vision_analysis=vision,
         audio_analysis=audio,
-        violations=result["violations"],
-        continuous_violations=result["continuousViolations"],
-        snapshot_violations=result["snapshotViolations"],
-        system_status=result["systemStatus"],
+        violations=result.get("violations", []),
+        continuous_violations=result.get("continuousViolations", []),
+        snapshot_violations=result.get("snapshotViolations", []),
+        system_status=result.get("systemStatus", "SUCCESS"),
     )
 
 
@@ -118,8 +116,9 @@ class ProctoringServicer(proctor_pb2_grpc.ProctoringServiceServicer):
             return proctor_pb2.RegisterResponse(success=False, message="Invalid JPEG image")
 
         if candidate_id not in self._sessions:
-            self._sessions[candidate_id] = ProctoringPipeline(
-                candidate_id=candidate_id)
+            self._sessions[candidate_id] = ProctoringPipeline(candidate_id=candidate_id)
+        else:
+            self._sessions[candidate_id].reset_session()
 
         ok = self._sessions[candidate_id].register_candidate(frame)
         if not ok:
@@ -138,7 +137,10 @@ class ProctoringServicer(proctor_pb2_grpc.ProctoringServiceServicer):
         if candidate_id not in self._sessions:
             return proctor_pb2.SessionResponse(success=False, message="Candidate not registered")
 
-        self._sessions[candidate_id].start()
+        pipeline = self._sessions[candidate_id]
+        if pipeline.is_running():
+            pipeline.stop()
+        pipeline.start()
         logger.info("[%s] Monitoring threads started", _safe_id(candidate_id))
         return proctor_pb2.SessionResponse(success=True, message="OK")
 
@@ -159,7 +161,9 @@ class ProctoringServicer(proctor_pb2_grpc.ProctoringServiceServicer):
             )
 
         frame = _jpeg_to_frame(request.frame_jpeg)
-        if frame is None:
+        audio_only = not request.frame_jpeg
+
+        if not audio_only and frame is None:
             return proctor_pb2.FrameResponse(
                 candidate_id=candidate_id,
                 system_status="ERROR",
@@ -167,12 +171,19 @@ class ProctoringServicer(proctor_pb2_grpc.ProctoringServiceServicer):
             )
 
         try:
-            result = self._sessions[candidate_id].process_frame(frame)
             if request.audio_chunk:
                 self._sessions[candidate_id]._audio_monitor.push_audio(
                     request.audio_chunk)
+
+            if audio_only:
+                return proctor_pb2.FrameResponse(
+                    candidate_id=candidate_id,
+                    system_status="AUDIO_ONLY",
+                )
+
+            result = self._sessions[candidate_id].process_frame(frame)
             logger.debug("[%s] violations=%s", _safe_id(
-                candidate_id), result["violations"])
+                candidate_id), result.get("violations", []))
             return _build_frame_response(result)
         except Exception as e:
             logger.exception("[%s] AnalyzeFrame error: %s",
@@ -193,7 +204,7 @@ class ProctoringServicer(proctor_pb2_grpc.ProctoringServiceServicer):
         if pipeline is None:
             return proctor_pb2.SessionResponse(success=False, message="No active session found")
 
-        pipeline.stop()
+        pipeline.close()
         logger.info("[%s] Session ended, threads stopped",
                     _safe_id(candidate_id))
         return proctor_pb2.SessionResponse(success=True, message="OK")

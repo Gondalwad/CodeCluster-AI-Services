@@ -18,7 +18,6 @@ class ProctorService:
         self,
         candidate_id: str,
         frame: bytes,
-        audio: bytes = b"",
     ):
         from protos.proctor_pb2 import FrameResponse
 
@@ -38,7 +37,7 @@ class ProctorService:
             logger.info("Registering candidate=%s", candidate_id)
 
             try:
-                register_response = ai_client.register_candidate(
+                register_response = await ai_client.register_candidate(
                     candidate_id=candidate_id,
                     face_image=frame,
                 )
@@ -54,7 +53,7 @@ class ProctorService:
                 return _waiting()
 
             try:
-                session_response = ai_client.start_session(candidate_id)
+                session_response = await ai_client.start_session(candidate_id)
             except Exception as e:
                 logger.error("gRPC start_session failed for %s: %s", candidate_id, e)
                 return _waiting()
@@ -70,10 +69,9 @@ class ProctorService:
 
         # Analyze current frame
         try:
-            prediction = ai_client.analyze_frame(
+            prediction = await ai_client.analyze_frame(
                 candidate_id=candidate_id,
                 frame=frame,
-                audio=audio,
             )
         except Exception as e:
             logger.error("gRPC analyze_frame failed for %s: %s", candidate_id, e)
@@ -86,24 +84,20 @@ class ProctorService:
 
         return prediction
 
-    def push_audio(self, candidate_id: str, audio: bytes):
-        """Push a raw PCM audio chunk directly to the ML pipeline."""
+    async def push_audio(self, candidate_id: str, audio: bytes):
+        """Push a raw PCM audio chunk directly to the ML audio monitor."""
         if candidate_id not in self.active_sessions:
             return
         try:
-            ai_client.analyze_frame(
-                candidate_id=candidate_id,
-                frame=b"",
-                audio=audio,
-            )
+            await ai_client.push_audio(candidate_id, audio)
         except Exception as e:
             logger.debug("push_audio gRPC error for %s: %s", candidate_id, e)
 
-    def end_session(self, candidate_id: str):
+    async def end_session(self, candidate_id: str):
         if candidate_id in self.active_sessions:
             logger.info("Ending session for %s", candidate_id)
             try:
-                response = ai_client.end_session(candidate_id)
+                response = await ai_client.end_session(candidate_id)
                 logger.info("End Session -> success=%s, message=%s",
                             response.success, response.message)
             except Exception as e:

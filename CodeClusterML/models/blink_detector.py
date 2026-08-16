@@ -6,17 +6,14 @@ from utils.image_utils import to_rgb
 _EAR_THRESHOLD = 0.20
 _BLINK_FRAMES  = 2
 
-# EAR landmark indices — left eye: [p1,p2,p3,p4,p5,p6], right eye same order
 _LEFT_EYE_PTS  = [33, 159, 158, 133, 153, 145]
 _RIGHT_EYE_PTS = [362, 386, 385, 263, 380, 374]
 
 
 class BlinkDetector:
-    """Tracks blinks and eye closure using Eye Aspect Ratio on MediaPipe landmarks."""
-
     def __init__(self):
         self._face_mesh = mp.solutions.face_mesh.FaceMesh(
-            static_image_mode=False,
+            static_image_mode=True,
             max_num_faces=1,
             refine_landmarks=True,
             min_detection_confidence=0.5,
@@ -56,6 +53,7 @@ class BlinkDetector:
 
         return {
             "eyesClosed": eyes_closed,
+            "isBlinking": eyes_closed,
             "blinkCount": self._blink_count,
             "earScore":   round(avg_ear, 4),
         }

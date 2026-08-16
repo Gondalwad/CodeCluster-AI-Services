@@ -11,8 +11,6 @@ _WHISPER_RMS = 0.09
 
 
 class SpeechDetector:
-    """Detects human speech in raw PCM audio using Silero VAD."""
-
     def __init__(self):
         self._model, self._utils = torch.hub.load(
             repo_or_dir="snakers4/silero-vad",
@@ -23,7 +21,10 @@ class SpeechDetector:
         self._model.eval()
 
     def _bytes_to_chunks(self, audio_bytes: bytes) -> tuple:
-        pcm = np.frombuffer(audio_bytes, dtype=np.int16).astype(np.float32)
+        if len(audio_bytes) < 2:
+            return [], 0.0
+        trimmed = audio_bytes[: len(audio_bytes) & ~1]
+        pcm = np.frombuffer(trimmed, dtype=np.int16).astype(np.float32)
         pcm /= 32768.0
 
         raw_rms = float(np.sqrt(np.mean(pcm ** 2)))
@@ -43,7 +44,7 @@ class SpeechDetector:
         if not chunks:
             return {"isHumanSpeech": False, "speechProbability": 0.0}
 
-        with torch.no_grad():
+        with torch.inference_mode():
             probs = [self._model(chunk, _SAMPLE_RATE).item() for chunk in chunks]
 
         self._model.reset_states()

@@ -14,9 +14,9 @@ torchaudio==2.5.1
 # gRPC
 grpcio==1.74.0
 grpcio-tools==1.71.2
-protobuf==4.25.9
+protobuf==6.31.1
 
 # Utilities
 numpy==1.26.4
-Pillow==10.2.0
-python-dotenv==1.2.1
+Pillow==12.2.0
+python-dotenv==1.2.2

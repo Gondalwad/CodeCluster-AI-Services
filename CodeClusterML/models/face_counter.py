@@ -4,14 +4,12 @@ from utils.image_utils import to_rgb
 
 
 class FaceCounter:
-    """Counts faces in a frame using MediaPipe FaceDetection."""
-
     _STATUS_MAP = {0: "MISSING", 1: "OK"}
 
     def __init__(self):
         self._detector = mp.solutions.face_detection.FaceDetection(
-            model_selection=1,
-            min_detection_confidence=0.6,
+            model_selection=0,
+            min_detection_confidence=0.5,
         )
 
     def predict(self, frame) -> dict:
@@ -19,7 +17,11 @@ class FaceCounter:
         results = self._detector.process(rgb)
         count   = len(results.detections) if results.detections else 0
         status  = self._STATUS_MAP.get(count, "VIOLATION")
-        return {"faceCount": count, "faceStatus": status}
+        return {
+            "faceCount": count,
+            "detectedFaceCount": count,
+            "faceStatus": status,
+        }
 
     def close(self):
         self._detector.close()

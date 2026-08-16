@@ -1,7 +1,6 @@
 import threading
 import queue
 import time
-import numpy as np
 
 from models.speech_detector import SpeechDetector
 
@@ -10,14 +9,7 @@ _CHUNK_FRAMES = 8192
 
 
 class AudioMonitor:
-    """
-    Processes audio chunks pushed from the gRPC layer on a background thread.
-    Runs Silero VAD continuously and pushes SPEECH_DETECTED events to the
-    shared violation queue when speech is detected.
-    """
-
-    def __init__(self, violation_queue: queue.Queue):
-        self._queue       = violation_queue
+    def __init__(self):
         self._detector    = SpeechDetector()
         self._stop_evt    = threading.Event()
         self._thread      = threading.Thread(target=self._run, daemon=True, name="AudioMonitor")
@@ -27,15 +19,27 @@ class AudioMonitor:
 
     def start(self):
         self._stop_evt.clear()
-        self._thread.start()
+        if not self._thread.is_alive():
+            self._thread = threading.Thread(target=self._run, daemon=True, name="AudioMonitor")
+            self._thread.start()
+
+    def reset(self):
+        with self._lock:
+            self._latest_result = {"isHumanSpeech": False, "speechProbability": 0.0}
+        try:
+            while True:
+                self._audio_queue.get_nowait()
+        except queue.Empty:
+            pass
+        self._detector.reset()
 
     def stop(self):
         self._stop_evt.set()
-        self._thread.join(timeout=3.0)
+        if self._thread.is_alive():
+            self._thread.join(timeout=3.0)
         self._detector.reset()
 
     def push_audio(self, pcm_bytes: bytes):
-        """Called by the gRPC servicer for each incoming audio chunk. Non-blocking."""
         try:
             self._audio_queue.put_nowait(pcm_bytes)
         except queue.Full:
@@ -59,10 +63,3 @@ class AudioMonitor:
 
             with self._lock:
                 self._latest_result = result
-
-            if result["isHumanSpeech"]:
-                self._queue.put({
-                    "type":      "SPEECH_DETECTED",
-                    "timestamp": int(time.time()),
-                    "data":      result,
-                })

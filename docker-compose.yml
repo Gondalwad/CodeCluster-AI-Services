@@ -1,0 +1,14 @@
+services:
+  ai_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: Ai_Worker
+    container_name: Ai_Worker
+    ports:
+      - "8000:8000"   # Backend FastAPI & WebSockets
+      - "50051:50051" # ML gRPC Service
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LOG_LEVEL=INFO
+    restart: unless-stopped

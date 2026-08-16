@@ -3,6 +3,7 @@ import sys
 import logging
 import subprocess
 from concurrent import futures
+from datetime import datetime
 
 import grpc
 
@@ -12,11 +13,17 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from config import GRPC_PORT
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(name)s — %(message)s",
-    datefmt="%H:%M:%S",
-)
+_LOG_DIR = os.path.join(ROOT, "logs")
+os.makedirs(_LOG_DIR, exist_ok=True)
+_LOG_FILE = os.path.join(_LOG_DIR, f"ml_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log")
+
+_fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(name)s — %(message)s", datefmt="%H:%M:%S")
+_file_handler = logging.FileHandler(_LOG_FILE, encoding="utf-8")
+_file_handler.setFormatter(_fmt)
+_console_handler = logging.StreamHandler()
+_console_handler.setFormatter(_fmt)
+
+logging.basicConfig(level=logging.INFO, handlers=[_console_handler, _file_handler])
 logger = logging.getLogger("ml_server")
 
 _PROTO_FILE = os.path.join(os.path.dirname(__file__), "proctor.proto")

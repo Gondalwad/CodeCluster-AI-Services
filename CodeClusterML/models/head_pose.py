@@ -5,7 +5,6 @@ import mediapipe as mp
 from utils.image_utils import to_rgb
 from config import HEAD_YAW_THRESHOLD_DEG, HEAD_PITCH_THRESHOLD_DEG
 
-# 6-point 3D face model (generic metric units)
 _MODEL_POINTS = np.array([
     (0.0,    0.0,    0.0),
     (0.0,   -330.0, -65.0),
@@ -19,11 +18,9 @@ _LANDMARK_IDS = [1, 152, 33, 263, 61, 291]
 
 
 class HeadPoseEstimator:
-    """Estimates yaw, pitch, roll from MediaPipe FaceMesh landmarks via solvePnP."""
-
     def __init__(self):
         self._face_mesh = mp.solutions.face_mesh.FaceMesh(
-            static_image_mode=False,
+            static_image_mode=True,
             max_num_faces=1,
             refine_landmarks=True,
             min_detection_confidence=0.5,
@@ -71,9 +68,6 @@ class HeadPoseEstimator:
             return null_result
 
         rmat, _ = cv2.Rodrigues(rvec)
-        # RQDecomp3x3 gives stable Euler angles for solvePnP output.
-        # The model points use Y-up but OpenCV camera space is Y-down,
-        # so pitch comes out near ±180° and needs unwrapping.
         angles, _, _, _, _, _ = cv2.RQDecomp3x3(rmat)
         pitch_raw = float(angles[0])
         yaw       = float(angles[1])

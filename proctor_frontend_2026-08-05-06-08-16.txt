@@ -1,0 +1,645 @@
+[2026-08-05 06:07:32.156] [SESSION] Proctoring session started
+[2026-08-05 06:07:32.409] [WS] WebSocket connected
+[2026-08-05 06:07:50.145] [FRAME] frame=1 | warning=false | warn_count=0 | cooldown=0s | terminate=false
+[2026-08-05 06:07:50.145] [FRAME] frame=1 | ml_violations=[FACE_MISSING, SPECTACLES_DETECTED] | snapshot=[FACE_MISSING, SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:50.146] [FRAME] frame=1 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:50.146] [DEBUG] frame=1 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.146] [DEBUG] frame=1 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.146] [DEBUG] frame=1 | Face not visible => frames=1/4 misses=0 warned=false cooldown=0s
+[2026-08-05 06:07:50.147] [DEBUG] frame=1 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.147] [DEBUG] frame=1 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.147] [DEBUG] frame=1 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.147] [DEBUG] frame=1 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.147] [DEBUG] frame=1 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.147] [DEBUG] frame=1 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.147] [DEBUG] frame=1 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.148] [DEBUG] frame=1 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.148] [DEBUG] frame=1 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.148] [DEBUG] frame=1 | Spectacles detected => frames=1/3 misses=0 warned=false cooldown=0s
+[2026-08-05 06:07:50.631] [FRAME] frame=2 | warning=false | warn_count=0 | cooldown=0s | terminate=false
+[2026-08-05 06:07:50.631] [FRAME] frame=2 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:50.631] [FRAME] frame=2 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:50.631] [DEBUG] frame=2 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.632] [DEBUG] frame=2 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.632] [DEBUG] frame=2 | Face not visible => frames=1/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:50.632] [DEBUG] frame=2 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.632] [DEBUG] frame=2 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.636] [DEBUG] frame=2 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.636] [DEBUG] frame=2 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.637] [DEBUG] frame=2 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.637] [DEBUG] frame=2 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.637] [DEBUG] frame=2 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.637] [DEBUG] frame=2 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.637] [DEBUG] frame=2 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.637] [DEBUG] frame=2 | Spectacles detected => frames=2/3 misses=0 warned=false cooldown=0s
+[2026-08-05 06:07:50.841] [FRAME] frame=3 | warning=true | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:07:50.841] [FRAME] frame=3 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[Spectacles detected]
+[2026-08-05 06:07:50.842] [FRAME] frame=3 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:50.842] [DEBUG] frame=3 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.842] [DEBUG] frame=3 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.842] [DEBUG] frame=3 | Face not visible => frames=1/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:50.842] [DEBUG] frame=3 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.843] [DEBUG] frame=3 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.843] [DEBUG] frame=3 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.843] [DEBUG] frame=3 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.843] [DEBUG] frame=3 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.843] [DEBUG] frame=3 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.844] [DEBUG] frame=3 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.844] [DEBUG] frame=3 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.844] [DEBUG] frame=3 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:50.844] [DEBUG] frame=3 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:07:50.845] [WARNING] *** WARNING FIRED *** count=1/3 violations=[Spectacles detected]
+[2026-08-05 06:07:51.161] [FRAME] frame=4 | warning=false | warn_count=1 | cooldown=5.69s | terminate=false
+[2026-08-05 06:07:51.163] [FRAME] frame=4 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:51.164] [FRAME] frame=4 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:51.165] [DEBUG] frame=4 | Head turned => frames=0/8 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.166] [DEBUG] frame=4 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.166] [DEBUG] frame=4 | Face not visible => frames=1/4 misses=2 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.166] [DEBUG] frame=4 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Book detected => frames=0/2 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Speech detected => frames=0/3 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Looking away => frames=0/3 misses=3 warned=false cooldown=5.69s
+[2026-08-05 06:07:51.167] [DEBUG] frame=4 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=5.69s
+[2026-08-05 06:07:53.808] [FRAME] frame=5 | warning=false | warn_count=1 | cooldown=3.1s | terminate=false
+[2026-08-05 06:07:53.809] [FRAME] frame=5 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:53.809] [FRAME] frame=5 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:53.809] [DEBUG] frame=5 | Head turned => frames=0/8 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.810] [DEBUG] frame=5 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.810] [DEBUG] frame=5 | Face not visible => frames=1/4 misses=2 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.810] [DEBUG] frame=5 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.811] [DEBUG] frame=5 | Book detected => frames=0/2 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.811] [DEBUG] frame=5 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.812] [DEBUG] frame=5 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.816] [DEBUG] frame=5 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.816] [DEBUG] frame=5 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.816] [DEBUG] frame=5 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.817] [DEBUG] frame=5 | Speech detected => frames=0/3 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.817] [DEBUG] frame=5 | Looking away => frames=0/3 misses=3 warned=false cooldown=3.1s
+[2026-08-05 06:07:53.818] [DEBUG] frame=5 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=3.1s
+[2026-08-05 06:07:54.633] [FRAME] frame=6 | warning=false | warn_count=1 | cooldown=2.47s | terminate=false
+[2026-08-05 06:07:54.633] [FRAME] frame=6 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:54.633] [FRAME] frame=6 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:54.633] [DEBUG] frame=6 | Head turned => frames=0/8 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.634] [DEBUG] frame=6 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.634] [DEBUG] frame=6 | Face not visible => frames=1/4 misses=2 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.634] [DEBUG] frame=6 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.634] [DEBUG] frame=6 | Book detected => frames=0/2 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.635] [DEBUG] frame=6 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.635] [DEBUG] frame=6 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.635] [DEBUG] frame=6 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.636] [DEBUG] frame=6 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.637] [DEBUG] frame=6 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.637] [DEBUG] frame=6 | Speech detected => frames=0/3 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.637] [DEBUG] frame=6 | Looking away => frames=0/3 misses=3 warned=false cooldown=2.47s
+[2026-08-05 06:07:54.638] [DEBUG] frame=6 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=2.47s
+[2026-08-05 06:07:55.119] [FRAME] frame=7 | warning=false | warn_count=1 | cooldown=1.76s | terminate=false
+[2026-08-05 06:07:55.119] [FRAME] frame=7 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:55.120] [FRAME] frame=7 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:55.120] [DEBUG] frame=7 | Head turned => frames=0/8 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.120] [DEBUG] frame=7 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.121] [DEBUG] frame=7 | Face not visible => frames=1/4 misses=2 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.121] [DEBUG] frame=7 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.121] [DEBUG] frame=7 | Book detected => frames=0/2 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.121] [DEBUG] frame=7 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.122] [DEBUG] frame=7 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.122] [DEBUG] frame=7 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.122] [DEBUG] frame=7 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.122] [DEBUG] frame=7 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.123] [DEBUG] frame=7 | Speech detected => frames=0/3 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.124] [DEBUG] frame=7 | Looking away => frames=0/3 misses=3 warned=false cooldown=1.76s
+[2026-08-05 06:07:55.124] [DEBUG] frame=7 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=1.76s
+[2026-08-05 06:07:55.535] [FRAME] frame=8 | warning=false | warn_count=1 | cooldown=1.38s | terminate=false
+[2026-08-05 06:07:55.536] [FRAME] frame=8 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:55.536] [FRAME] frame=8 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:55.536] [DEBUG] frame=8 | Head turned => frames=0/8 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.537] [DEBUG] frame=8 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.537] [DEBUG] frame=8 | Face not visible => frames=1/4 misses=2 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.537] [DEBUG] frame=8 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.537] [DEBUG] frame=8 | Book detected => frames=0/2 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.538] [DEBUG] frame=8 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.538] [DEBUG] frame=8 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.538] [DEBUG] frame=8 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.538] [DEBUG] frame=8 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.538] [DEBUG] frame=8 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.539] [DEBUG] frame=8 | Speech detected => frames=0/3 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.540] [DEBUG] frame=8 | Looking away => frames=0/3 misses=3 warned=false cooldown=1.38s
+[2026-08-05 06:07:55.540] [DEBUG] frame=8 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=1.38s
+[2026-08-05 06:07:55.905] [FRAME] frame=9 | warning=false | warn_count=1 | cooldown=0.98s | terminate=false
+[2026-08-05 06:07:55.906] [FRAME] frame=9 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:55.906] [FRAME] frame=9 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:55.907] [DEBUG] frame=9 | Head turned => frames=0/8 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.908] [DEBUG] frame=9 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.908] [DEBUG] frame=9 | Face not visible => frames=1/4 misses=2 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.908] [DEBUG] frame=9 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.908] [DEBUG] frame=9 | Book detected => frames=0/2 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.909] [DEBUG] frame=9 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.909] [DEBUG] frame=9 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.909] [DEBUG] frame=9 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.909] [DEBUG] frame=9 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.910] [DEBUG] frame=9 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.910] [DEBUG] frame=9 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.910] [DEBUG] frame=9 | Looking away => frames=0/3 misses=3 warned=false cooldown=0.98s
+[2026-08-05 06:07:55.911] [DEBUG] frame=9 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0.98s
+[2026-08-05 06:07:57.258] [FRAME] frame=10 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:07:57.259] [FRAME] frame=10 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:57.259] [FRAME] frame=10 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:57.262] [DEBUG] frame=10 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.263] [DEBUG] frame=10 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.265] [DEBUG] frame=10 | Face not visible => frames=1/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:57.265] [DEBUG] frame=10 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.265] [DEBUG] frame=10 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.266] [DEBUG] frame=10 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.266] [DEBUG] frame=10 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.266] [DEBUG] frame=10 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.269] [DEBUG] frame=10 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.270] [DEBUG] frame=10 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.270] [DEBUG] frame=10 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.270] [DEBUG] frame=10 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.270] [DEBUG] frame=10 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:07:57.654] [FRAME] frame=11 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:07:57.655] [FRAME] frame=11 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:57.655] [FRAME] frame=11 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:57.655] [DEBUG] frame=11 | Face not visible => frames=1/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:07:57.655] [DEBUG] frame=11 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:07:58.002] [FRAME] frame=12 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:07:58.002] [FRAME] frame=12 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:58.004] [FRAME] frame=12 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:58.005] [DEBUG] frame=12 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.005] [DEBUG] frame=12 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.006] [DEBUG] frame=12 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.006] [DEBUG] frame=12 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.006] [DEBUG] frame=12 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.006] [DEBUG] frame=12 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.006] [DEBUG] frame=12 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.007] [DEBUG] frame=12 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.007] [DEBUG] frame=12 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.007] [DEBUG] frame=12 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.007] [DEBUG] frame=12 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.007] [DEBUG] frame=12 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:07:58.304] [FRAME] frame=13 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:07:58.304] [FRAME] frame=13 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:58.305] [FRAME] frame=13 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:58.305] [DEBUG] frame=13 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.306] [DEBUG] frame=13 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.307] [DEBUG] frame=13 | Face not visible => frames=0/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:07:58.307] [DEBUG] frame=13 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.307] [DEBUG] frame=13 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.307] [DEBUG] frame=13 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.308] [DEBUG] frame=13 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.310] [DEBUG] frame=13 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.310] [DEBUG] frame=13 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.311] [DEBUG] frame=13 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.311] [DEBUG] frame=13 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.311] [DEBUG] frame=13 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.311] [DEBUG] frame=13 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:07:58.811] [FRAME] frame=14 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:07:58.812] [FRAME] frame=14 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:07:58.812] [FRAME] frame=14 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:07:58.812] [DEBUG] frame=14 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.812] [DEBUG] frame=14 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.812] [DEBUG] frame=14 | Face not visible => frames=0/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:07:58.813] [DEBUG] frame=14 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.813] [DEBUG] frame=14 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.813] [DEBUG] frame=14 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.813] [DEBUG] frame=14 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.814] [DEBUG] frame=14 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.814] [DEBUG] frame=14 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.814] [DEBUG] frame=14 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.814] [DEBUG] frame=14 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.815] [DEBUG] frame=14 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:07:58.815] [DEBUG] frame=14 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:00.247] [FRAME] frame=15 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:00.247] [FRAME] frame=15 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:00.248] [FRAME] frame=15 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:00.248] [DEBUG] frame=15 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.249] [DEBUG] frame=15 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.249] [DEBUG] frame=15 | Face not visible => frames=0/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:00.250] [DEBUG] frame=15 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.254] [DEBUG] frame=15 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.255] [DEBUG] frame=15 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.256] [DEBUG] frame=15 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.256] [DEBUG] frame=15 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.258] [DEBUG] frame=15 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.261] [DEBUG] frame=15 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.261] [DEBUG] frame=15 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.261] [DEBUG] frame=15 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.262] [DEBUG] frame=15 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:00.581] [FRAME] frame=16 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:00.581] [FRAME] frame=16 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:00.581] [FRAME] frame=16 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:00.582] [DEBUG] frame=16 | Face not visible => frames=0/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:00.582] [DEBUG] frame=16 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:00.864] [FRAME] frame=17 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:00.864] [FRAME] frame=17 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:00.865] [FRAME] frame=17 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:00.865] [DEBUG] frame=17 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.866] [DEBUG] frame=17 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.866] [DEBUG] frame=17 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.867] [DEBUG] frame=17 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.868] [DEBUG] frame=17 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.868] [DEBUG] frame=17 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.868] [DEBUG] frame=17 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.868] [DEBUG] frame=17 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.869] [DEBUG] frame=17 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.870] [DEBUG] frame=17 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.870] [DEBUG] frame=17 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:00.871] [DEBUG] frame=17 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:01.135] [FRAME] frame=18 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:01.136] [FRAME] frame=18 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:01.136] [FRAME] frame=18 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:01.136] [DEBUG] frame=18 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.137] [DEBUG] frame=18 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.137] [DEBUG] frame=18 | Face not visible => frames=0/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:01.137] [DEBUG] frame=18 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.137] [DEBUG] frame=18 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.137] [DEBUG] frame=18 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.138] [DEBUG] frame=18 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.138] [DEBUG] frame=18 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.138] [DEBUG] frame=18 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.138] [DEBUG] frame=18 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.138] [DEBUG] frame=18 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.141] [DEBUG] frame=18 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.141] [DEBUG] frame=18 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:01.444] [FRAME] frame=19 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:01.445] [FRAME] frame=19 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:01.445] [FRAME] frame=19 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:01.445] [DEBUG] frame=19 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.446] [DEBUG] frame=19 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.446] [DEBUG] frame=19 | Face not visible => frames=0/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:01.446] [DEBUG] frame=19 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.446] [DEBUG] frame=19 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.446] [DEBUG] frame=19 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.447] [DEBUG] frame=19 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.447] [DEBUG] frame=19 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.447] [DEBUG] frame=19 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.447] [DEBUG] frame=19 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.448] [DEBUG] frame=19 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.448] [DEBUG] frame=19 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:01.448] [DEBUG] frame=19 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:02.573] [FRAME] frame=20 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:02.573] [FRAME] frame=20 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:02.573] [FRAME] frame=20 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Face not visible => frames=0/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.574] [DEBUG] frame=20 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.575] [DEBUG] frame=20 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.575] [DEBUG] frame=20 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.575] [DEBUG] frame=20 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.576] [DEBUG] frame=20 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:02.817] [FRAME] frame=21 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:02.818] [FRAME] frame=21 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:02.818] [FRAME] frame=21 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:02.818] [DEBUG] frame=21 | Face not visible => frames=0/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:02.818] [DEBUG] frame=21 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:03.097] [FRAME] frame=22 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:03.097] [FRAME] frame=22 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:03.098] [FRAME] frame=22 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:03.098] [DEBUG] frame=22 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.100] [DEBUG] frame=22 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.100] [DEBUG] frame=22 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.100] [DEBUG] frame=22 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.101] [DEBUG] frame=22 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.101] [DEBUG] frame=22 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.101] [DEBUG] frame=22 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.101] [DEBUG] frame=22 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.102] [DEBUG] frame=22 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.102] [DEBUG] frame=22 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.102] [DEBUG] frame=22 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.103] [DEBUG] frame=22 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:03.399] [FRAME] frame=23 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:03.399] [FRAME] frame=23 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:03.400] [FRAME] frame=23 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:03.400] [DEBUG] frame=23 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.400] [DEBUG] frame=23 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.400] [DEBUG] frame=23 | Face not visible => frames=0/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:03.401] [DEBUG] frame=23 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.401] [DEBUG] frame=23 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.401] [DEBUG] frame=23 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.401] [DEBUG] frame=23 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.402] [DEBUG] frame=23 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.402] [DEBUG] frame=23 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.402] [DEBUG] frame=23 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.403] [DEBUG] frame=23 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.403] [DEBUG] frame=23 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.404] [DEBUG] frame=23 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:03.727] [FRAME] frame=24 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:03.728] [FRAME] frame=24 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:03.728] [FRAME] frame=24 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:03.728] [DEBUG] frame=24 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.729] [DEBUG] frame=24 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.729] [DEBUG] frame=24 | Face not visible => frames=0/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:03.729] [DEBUG] frame=24 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.730] [DEBUG] frame=24 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.730] [DEBUG] frame=24 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.730] [DEBUG] frame=24 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.730] [DEBUG] frame=24 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.730] [DEBUG] frame=24 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.731] [DEBUG] frame=24 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.731] [DEBUG] frame=24 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.732] [DEBUG] frame=24 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:03.732] [DEBUG] frame=24 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:04.864] [FRAME] frame=25 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:04.865] [FRAME] frame=25 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:04.865] [FRAME] frame=25 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:04.865] [DEBUG] frame=25 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.866] [DEBUG] frame=25 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.866] [DEBUG] frame=25 | Face not visible => frames=0/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:04.866] [DEBUG] frame=25 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.866] [DEBUG] frame=25 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.866] [DEBUG] frame=25 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.868] [DEBUG] frame=25 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.870] [DEBUG] frame=25 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.870] [DEBUG] frame=25 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.871] [DEBUG] frame=25 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.871] [DEBUG] frame=25 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.871] [DEBUG] frame=25 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:04.871] [DEBUG] frame=25 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:05.194] [FRAME] frame=26 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:05.195] [FRAME] frame=26 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:05.195] [FRAME] frame=26 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:05.196] [DEBUG] frame=26 | Face not visible => frames=0/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:05.196] [DEBUG] frame=26 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:05.585] [FRAME] frame=27 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:05.587] [FRAME] frame=27 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:05.588] [FRAME] frame=27 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:05.590] [DEBUG] frame=27 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.590] [DEBUG] frame=27 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.590] [DEBUG] frame=27 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.591] [DEBUG] frame=27 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.591] [DEBUG] frame=27 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.592] [DEBUG] frame=27 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.596] [DEBUG] frame=27 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.596] [DEBUG] frame=27 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.597] [DEBUG] frame=27 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.597] [DEBUG] frame=27 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.597] [DEBUG] frame=27 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.598] [DEBUG] frame=27 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:05.852] [FRAME] frame=28 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:05.853] [FRAME] frame=28 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:05.853] [FRAME] frame=28 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:05.853] [DEBUG] frame=28 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.854] [DEBUG] frame=28 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.854] [DEBUG] frame=28 | Face not visible => frames=0/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:05.855] [DEBUG] frame=28 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.855] [DEBUG] frame=28 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.855] [DEBUG] frame=28 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.855] [DEBUG] frame=28 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.856] [DEBUG] frame=28 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.856] [DEBUG] frame=28 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.856] [DEBUG] frame=28 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.857] [DEBUG] frame=28 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.857] [DEBUG] frame=28 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:05.857] [DEBUG] frame=28 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:06.147] [FRAME] frame=29 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:06.147] [FRAME] frame=29 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:06.148] [FRAME] frame=29 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:06.149] [DEBUG] frame=29 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.149] [DEBUG] frame=29 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.149] [DEBUG] frame=29 | Face not visible => frames=0/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:06.150] [DEBUG] frame=29 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.150] [DEBUG] frame=29 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.152] [DEBUG] frame=29 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.152] [DEBUG] frame=29 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.152] [DEBUG] frame=29 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.153] [DEBUG] frame=29 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.153] [DEBUG] frame=29 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.153] [DEBUG] frame=29 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.153] [DEBUG] frame=29 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:06.153] [DEBUG] frame=29 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:07.298] [FRAME] frame=30 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:07.298] [FRAME] frame=30 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:07.299] [FRAME] frame=30 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:07.299] [DEBUG] frame=30 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.300] [DEBUG] frame=30 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.301] [DEBUG] frame=30 | Face not visible => frames=0/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:07.301] [DEBUG] frame=30 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.301] [DEBUG] frame=30 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.302] [DEBUG] frame=30 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.302] [DEBUG] frame=30 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.302] [DEBUG] frame=30 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.302] [DEBUG] frame=30 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.302] [DEBUG] frame=30 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.303] [DEBUG] frame=30 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.303] [DEBUG] frame=30 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.303] [DEBUG] frame=30 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:07.632] [FRAME] frame=31 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:07.632] [FRAME] frame=31 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:07.632] [FRAME] frame=31 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:07.633] [DEBUG] frame=31 | Face not visible => frames=0/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:07.634] [DEBUG] frame=31 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:07.933] [FRAME] frame=32 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:07.934] [FRAME] frame=32 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:07.934] [FRAME] frame=32 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:07.934] [DEBUG] frame=32 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.935] [DEBUG] frame=32 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.935] [DEBUG] frame=32 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.935] [DEBUG] frame=32 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.936] [DEBUG] frame=32 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.936] [DEBUG] frame=32 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.936] [DEBUG] frame=32 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.936] [DEBUG] frame=32 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.937] [DEBUG] frame=32 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.937] [DEBUG] frame=32 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.937] [DEBUG] frame=32 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:07.937] [DEBUG] frame=32 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:08.204] [FRAME] frame=33 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:08.204] [FRAME] frame=33 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:08.205] [FRAME] frame=33 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:08.205] [DEBUG] frame=33 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.205] [DEBUG] frame=33 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.206] [DEBUG] frame=33 | Face not visible => frames=0/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:08.206] [DEBUG] frame=33 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.206] [DEBUG] frame=33 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.207] [DEBUG] frame=33 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.207] [DEBUG] frame=33 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.207] [DEBUG] frame=33 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.207] [DEBUG] frame=33 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.208] [DEBUG] frame=33 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.208] [DEBUG] frame=33 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.208] [DEBUG] frame=33 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.209] [DEBUG] frame=33 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:08.504] [FRAME] frame=34 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:08.505] [FRAME] frame=34 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:08.505] [FRAME] frame=34 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:08.505] [DEBUG] frame=34 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.506] [DEBUG] frame=34 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.506] [DEBUG] frame=34 | Face not visible => frames=0/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:08.506] [DEBUG] frame=34 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.506] [DEBUG] frame=34 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.507] [DEBUG] frame=34 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.507] [DEBUG] frame=34 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.507] [DEBUG] frame=34 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.507] [DEBUG] frame=34 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.508] [DEBUG] frame=34 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.508] [DEBUG] frame=34 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.508] [DEBUG] frame=34 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:08.509] [DEBUG] frame=34 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:09.920] [FRAME] frame=35 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:09.920] [FRAME] frame=35 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:09.920] [FRAME] frame=35 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:09.920] [DEBUG] frame=35 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.921] [DEBUG] frame=35 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.921] [DEBUG] frame=35 | Face not visible => frames=0/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:09.921] [DEBUG] frame=35 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.921] [DEBUG] frame=35 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.922] [DEBUG] frame=35 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.922] [DEBUG] frame=35 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.922] [DEBUG] frame=35 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.922] [DEBUG] frame=35 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.922] [DEBUG] frame=35 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.923] [DEBUG] frame=35 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.923] [DEBUG] frame=35 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:09.923] [DEBUG] frame=35 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:10.195] [FRAME] frame=36 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:10.195] [FRAME] frame=36 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:10.199] [FRAME] frame=36 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:10.199] [DEBUG] frame=36 | Face not visible => frames=0/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:10.200] [DEBUG] frame=36 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:10.507] [FRAME] frame=37 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:10.507] [FRAME] frame=37 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:10.507] [FRAME] frame=37 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:10.507] [DEBUG] frame=37 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.508] [DEBUG] frame=37 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.508] [DEBUG] frame=37 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.511] [DEBUG] frame=37 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.512] [DEBUG] frame=37 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.512] [DEBUG] frame=37 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.512] [DEBUG] frame=37 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.512] [DEBUG] frame=37 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.513] [DEBUG] frame=37 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.513] [DEBUG] frame=37 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.515] [DEBUG] frame=37 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.516] [DEBUG] frame=37 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:10.806] [FRAME] frame=38 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:10.807] [FRAME] frame=38 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:10.807] [FRAME] frame=38 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:10.808] [DEBUG] frame=38 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.808] [DEBUG] frame=38 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.808] [DEBUG] frame=38 | Face not visible => frames=0/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:10.809] [DEBUG] frame=38 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.810] [DEBUG] frame=38 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.811] [DEBUG] frame=38 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.811] [DEBUG] frame=38 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.811] [DEBUG] frame=38 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.811] [DEBUG] frame=38 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.812] [DEBUG] frame=38 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.812] [DEBUG] frame=38 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.812] [DEBUG] frame=38 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:10.812] [DEBUG] frame=38 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:11.662] [FRAME] frame=39 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:11.663] [FRAME] frame=39 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:11.663] [FRAME] frame=39 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:11.663] [DEBUG] frame=39 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.664] [DEBUG] frame=39 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.664] [DEBUG] frame=39 | Face not visible => frames=0/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:11.664] [DEBUG] frame=39 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.665] [DEBUG] frame=39 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.665] [DEBUG] frame=39 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.666] [DEBUG] frame=39 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.667] [DEBUG] frame=39 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.668] [DEBUG] frame=39 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.670] [DEBUG] frame=39 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.670] [DEBUG] frame=39 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.670] [DEBUG] frame=39 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:11.671] [DEBUG] frame=39 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:12.789] [FRAME] frame=40 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:12.789] [FRAME] frame=40 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:12.789] [FRAME] frame=40 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:12.790] [DEBUG] frame=40 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.790] [DEBUG] frame=40 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.790] [DEBUG] frame=40 | Face not visible => frames=0/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:12.790] [DEBUG] frame=40 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.791] [DEBUG] frame=40 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.791] [DEBUG] frame=40 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.791] [DEBUG] frame=40 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.791] [DEBUG] frame=40 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.792] [DEBUG] frame=40 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.792] [DEBUG] frame=40 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.792] [DEBUG] frame=40 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.792] [DEBUG] frame=40 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:12.793] [DEBUG] frame=40 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:13.085] [FRAME] frame=41 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:13.086] [FRAME] frame=41 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:13.086] [FRAME] frame=41 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:13.086] [DEBUG] frame=41 | Face not visible => frames=0/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:13.087] [DEBUG] frame=41 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:13.405] [FRAME] frame=42 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:13.406] [FRAME] frame=42 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:13.406] [FRAME] frame=42 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:13.406] [DEBUG] frame=42 | Head turned => frames=0/8 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.406] [DEBUG] frame=42 | Face authentication failed => frames=0/15 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.407] [DEBUG] frame=42 | Mobile phone detected => frames=0/1 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.407] [DEBUG] frame=42 | Book detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.408] [DEBUG] frame=42 | Laptop detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.408] [DEBUG] frame=42 | Tablet detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.408] [DEBUG] frame=42 | Earphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.409] [DEBUG] frame=42 | Headphones detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.409] [DEBUG] frame=42 | Multiple persons detected => frames=0/2 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.409] [DEBUG] frame=42 | Speech detected => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.410] [DEBUG] frame=42 | Looking away => frames=0/3 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.410] [DEBUG] frame=42 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:13.738] [FRAME] frame=43 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:13.738] [FRAME] frame=43 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:13.739] [FRAME] frame=43 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:13.740] [DEBUG] frame=43 | Head turned => frames=0/8 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.740] [DEBUG] frame=43 | Face authentication failed => frames=0/15 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.740] [DEBUG] frame=43 | Face not visible => frames=0/4 misses=1 warned=false cooldown=0s
+[2026-08-05 06:08:13.741] [DEBUG] frame=43 | Mobile phone detected => frames=0/1 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.741] [DEBUG] frame=43 | Book detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.742] [DEBUG] frame=43 | Laptop detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.742] [DEBUG] frame=43 | Tablet detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.743] [DEBUG] frame=43 | Earphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.743] [DEBUG] frame=43 | Headphones detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.744] [DEBUG] frame=43 | Multiple persons detected => frames=0/2 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.744] [DEBUG] frame=43 | Speech detected => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.745] [DEBUG] frame=43 | Looking away => frames=0/3 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:13.745] [DEBUG] frame=43 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:14.071] [FRAME] frame=44 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:14.071] [FRAME] frame=44 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:14.071] [FRAME] frame=44 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:14.072] [DEBUG] frame=44 | Head turned => frames=0/8 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.072] [DEBUG] frame=44 | Face authentication failed => frames=0/15 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.072] [DEBUG] frame=44 | Face not visible => frames=0/4 misses=2 warned=false cooldown=0s
+[2026-08-05 06:08:14.072] [DEBUG] frame=44 | Mobile phone detected => frames=0/1 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.073] [DEBUG] frame=44 | Book detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.073] [DEBUG] frame=44 | Laptop detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.074] [DEBUG] frame=44 | Tablet detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.074] [DEBUG] frame=44 | Earphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.074] [DEBUG] frame=44 | Headphones detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.075] [DEBUG] frame=44 | Multiple persons detected => frames=0/2 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.075] [DEBUG] frame=44 | Speech detected => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.076] [DEBUG] frame=44 | Looking away => frames=0/3 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:14.076] [DEBUG] frame=44 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:15.201] [FRAME] frame=45 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:15.201] [FRAME] frame=45 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:15.201] [FRAME] frame=45 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:15.202] [DEBUG] frame=45 | Head turned => frames=0/8 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.202] [DEBUG] frame=45 | Face authentication failed => frames=0/15 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.202] [DEBUG] frame=45 | Face not visible => frames=0/4 misses=3 warned=false cooldown=0s
+[2026-08-05 06:08:15.203] [DEBUG] frame=45 | Mobile phone detected => frames=0/1 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.203] [DEBUG] frame=45 | Book detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.203] [DEBUG] frame=45 | Laptop detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.204] [DEBUG] frame=45 | Tablet detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.204] [DEBUG] frame=45 | Earphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.204] [DEBUG] frame=45 | Headphones detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.204] [DEBUG] frame=45 | Multiple persons detected => frames=0/2 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.204] [DEBUG] frame=45 | Speech detected => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.205] [DEBUG] frame=45 | Looking away => frames=0/3 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.205] [DEBUG] frame=45 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:15.508] [FRAME] frame=46 | warning=false | warn_count=1 | cooldown=0s | terminate=false
+[2026-08-05 06:08:15.510] [FRAME] frame=46 | ml_violations=[SPECTACLES_DETECTED] | snapshot=[SPECTACLES_DETECTED] | rule_violations=[none]
+[2026-08-05 06:08:15.510] [FRAME] frame=46 | system_status=SUCCESS | ignore_frame=false
+[2026-08-05 06:08:15.511] [DEBUG] frame=46 | Face not visible => frames=0/4 misses=4 warned=false cooldown=0s
+[2026-08-05 06:08:15.511] [DEBUG] frame=46 | Spectacles detected => frames=0/3 misses=0 warned=true cooldown=0s
+[2026-08-05 06:08:16.805] [WS] WebSocket disconnected

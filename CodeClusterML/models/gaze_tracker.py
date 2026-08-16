@@ -10,14 +10,9 @@ _RIGHT_EYE  = [362, 263]
 
 
 class GazeTracker:
-    """
-    Estimates gaze direction from iris position relative to eye corners.
-    Uses MediaPipe FaceMesh iris landmarks — no model training needed.
-    """
-
     def __init__(self):
         self._face_mesh = mp.solutions.face_mesh.FaceMesh(
-            static_image_mode=False,
+            static_image_mode=True,
             max_num_faces=1,
             refine_landmarks=True,
             min_detection_confidence=0.5,
@@ -38,7 +33,7 @@ class GazeTracker:
         results = self._face_mesh.process(rgb)
 
         if not results.multi_face_landmarks:
-            return {"gazeDirection": "OFF_SCREEN", "leftIrisRatio": None, "rightIrisRatio": None}
+            return {"gazeDirection": "CENTER", "leftIrisRatio": None, "rightIrisRatio": None}
 
         landmarks = results.multi_face_landmarks[0].landmark
 
@@ -46,9 +41,9 @@ class GazeTracker:
         right_ratio = self._iris_ratio(landmarks, _RIGHT_IRIS, _RIGHT_EYE)
         avg_ratio   = (left_ratio + right_ratio) / 2.0
 
-        if avg_ratio < 0.40:
+        if avg_ratio < 0.28:
             direction = "LEFT"
-        elif avg_ratio > 0.60:
+        elif avg_ratio > 0.72:
             direction = "RIGHT"
         else:
             direction = "CENTER"

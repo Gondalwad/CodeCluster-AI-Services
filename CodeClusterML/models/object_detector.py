@@ -4,8 +4,6 @@ from config import YOLO_MODEL_PATH, YOLO_CONFIDENCE_THRESHOLD, BANNED_CLASSES
 
 
 class ObjectDetector:
-    """Detects banned objects (phone, book, laptop) using YOLOv8n."""
-
     def __init__(self):
         self._model  = YOLO(YOLO_MODEL_PATH)
         self._banned = set(BANNED_CLASSES)
@@ -13,6 +11,7 @@ class ObjectDetector:
     def predict(self, frame) -> dict:
         results = self._model.predict(
             source=frame,
+            imgsz=320,
             conf=YOLO_CONFIDENCE_THRESHOLD,
             verbose=False,
         )[0]
